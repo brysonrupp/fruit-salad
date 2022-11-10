@@ -1,7 +1,7 @@
 import { appState } from "../AppState.js"
 import { playersService } from "../Services/PlayersServices.js"
 import { getFormData } from "../Utils/FormHandler.js"
-import { setHTML } from "../Utils/Writer.js"
+import { setHTML, setText } from "../Utils/Writer.js"
 
 
 
@@ -31,6 +31,16 @@ export class PlayersController {
         console.log(formData);
         playersService.createPlayer(formData)
     }
+
+    setActivePlayer(playerId) {
+
+        playersService.setActivePlayer(playerId)
+        let activePlayer = appState.activePlayer
+        setText('current-player', activePlayer.name)
+        console.log('activePlayer', activePlayer.name);
+    }
+
+
 
     // showPlayers() {
     //     _drawPlayers()

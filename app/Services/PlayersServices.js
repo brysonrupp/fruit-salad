@@ -12,7 +12,11 @@ class PlayersService {
         saveState('Players', appState.players)
     }
 
-
+    setActivePlayer(playerId) {
+        let foundPlayer = appState.players.find(p => p.id == playerId)
+        console.log("foundPlayer");
+        appState.activePlayer = foundPlayer
+    }
 
 
 

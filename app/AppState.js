@@ -13,6 +13,11 @@ class AppState extends EventEmitter {
     new Player({ name: 'Bryson', score: 0 }),
     new Player({ name: 'Derik', score: 0 })
   ]
+
+  activePlayer = null
+
+
+
 }
 
 
