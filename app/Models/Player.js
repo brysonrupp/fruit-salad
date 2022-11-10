@@ -7,13 +7,13 @@ export class Player {
         this.score = data.score
     }
 
-    get ListTemplate() {
+    get listTemplate() {
         return `
         <div class="row justify-content-end">
         <div class="col-3">name:${this.name}</div>
         <div class="col-3">score:${this.score}</div>
-      </div>
-      `
+        </div>
+        `
 
     }
 }

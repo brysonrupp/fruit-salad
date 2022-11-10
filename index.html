@@ -26,11 +26,36 @@
     </nav>
   </header>
   <main>
-    test
+    <section>
+      <div id="players">
+
+      </div>
+    </section>
     <!-- <div class="row justify-content-end">
       <div class="col-3">name:</div>
       <div class="col-3">score:</div>
     </div> -->
+
+
+    <!-- NOTE FORM -->
+    <div class="container-fluid">
+      <div class="row my-3">
+        <div class="col-6 m-auto" id="player-form">
+
+          <form onsubmit="app.playersController.createPlayer()">
+            <div class="form-floating mb-3">
+              <input required type="text" minlength="3" class="form-control" id="player-name" placeholder="Enter Name"
+                name="name">
+              <label for="name">Name</label>
+            </div>
+            <button type="submit" class="btn btn-success mt-3">Submit</button>
+
+
+
+
+
+
+
 
   </main>
   <footer class="bg-dark text-light">

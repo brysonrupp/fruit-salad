@@ -10,8 +10,8 @@ class AppState extends EventEmitter {
 
 
   players = [
-    new Player({ name: 'bryson', score: 0 }),
-    new Player({ name: 'derick', score: 0 })
+    new Player({ name: 'Bryson', score: 0 }),
+    new Player({ name: 'Derik', score: 0 })
   ]
 }
 
