@@ -10,6 +10,8 @@ class PlayersService {
         // console.log(newPlayer);
         appState.players = [...appState.players, newPlayer]
         saveState('Players', appState.players)
+
+
     }
 
     setActivePlayer(playerId) {

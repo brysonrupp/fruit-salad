@@ -30,6 +30,7 @@ export class PlayersController {
         let formData = getFormData(form)
         console.log(formData);
         playersService.createPlayer(formData)
+        form.reset()
     }
 
     setActivePlayer(playerId) {
